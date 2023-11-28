@@ -27,6 +27,11 @@ h4{
     background-color: #ff99cc;
 }
 
+h5{
+    font-family: 'Vollkorn', serif; 
+    color: white;
+    background-color: #000;
+}
 p{
   font-family: 'EB Garamond', serif;
   color: MidnightBlue;
@@ -42,11 +47,7 @@ ol{
   font-family: 'PT Sans Caption', sans-serif;
   color: MidnightBlue
 }
-a:link { /* unvisited link */ color: cadetblue; }
-a:visited { /* visited link */ color: steelblue; }
-a:hover { /* moused over link */ color: cornflowerblue; }
-a:active { /* current link */ color: darkorchid; }
-a:focus { /* focused link */ color: violet; }
+
 
 section {
     text-align: center;
@@ -54,6 +55,11 @@ section {
 div{
     text-align: justify; /* For Edge */
   text-align-last: center;
+}
+
+header h1 a{
+    text-decoration: none;
+    color:white;
 }
 
 .bar {
@@ -106,17 +112,77 @@ div{
     margin-top: 20px; /* Adjust margin as needed */
 }
 
-.extra-box {
+.members-box {
     width: calc(33.33% - 20px); /* Calculate width with margin */
+    height: 420px;
     box-sizing: border-box;
     padding: 10px;
     border: 1px solid #ccc;
     margin-right: 20px; /* Adjust margin between boxes */
 }
 
-.extra-box:last-child {
+.members-box img {
+    text-align: center;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+}
+
+.members-box a{
+    color: white;
+}
+
+.members-box a:hover {
+    color: #000;
+}
+
+.members-box p{
+    color:#000;
+}
+.members-box:last-child {
     margin-right: 0;
 }
+/* profile pages that is linked from the members*/
+.center-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh; /* Set the height of the container to 100% of the viewport height */
+  }
+
+.center-container img {
+    max-width: 450px; /* Ensure the image doesn't exceed its container width */
+    height: auto; /* Maintain the image's aspect ratio */
+    margin: 10px 0; /* Add some margin for spacing */
+  }
+
+.center-container h3 {
+    font-family: 'Vollkorn', serif;  
+    color: black
+}
+
+.center-container ul {
+    font-family: 'EB Garamond', serif;
+    color: midnightblue;
+    font-size: 20px;
+}
+
+/* page 3 discography */
+
+    .albums-flex-container {
+        max-width: 300px;
+        margin: 20px auto;
+        overflow: hidden;
+    }
+    
+    .album-box img {
+        width: 100%;
+        height: auto;
+        padding: 2px;
+        display: block;
+    }
+ 
 
 
 @media (min-width: 600px) {
