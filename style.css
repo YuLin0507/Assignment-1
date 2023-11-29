@@ -149,13 +149,38 @@ header h1 a{
     align-items: center;
     justify-content: flex-start;
     height: 100vh; /* Set the height of the container to 100% of the viewport height */
+}
+
+.inner-container {
+    text-align: center; /* Center-align text within the inner container */
+    margin: 20px 0; /* Add some margin for spacing */
+    background-color: #FFF0F5;
+    width: 800px;
+    border: 1px solid #333;
+    border-color: #eba9be;
+
+  }
+
+  .inner1-container {
+    text-align: center; /* Center-align text within the inner container */
+    margin: 20px 0; /* Add some margin for spacing */
+    width: 1000px;
+
+  }
+
+  .inner1-container img{
+    max-width: 300px;
+    height: auto;
+    margin: 10px 0;
   }
 
 .center-container img {
     max-width: 450px; /* Ensure the image doesn't exceed its container width */
     height: auto; /* Maintain the image's aspect ratio */
     margin: 10px 0; /* Add some margin for spacing */
-  }
+    border: 1px solid #333;
+
+}
 
 .center-container h3 {
     font-family: 'Vollkorn', serif;  
@@ -175,6 +200,10 @@ header h1 a{
         margin: 20px auto;
         overflow: hidden;
     }
+
+.albums-flex-container h2{
+       background-color: gainsboro;
+    }
     
     .album-box img {
         width: 100%;
@@ -183,6 +212,14 @@ header h1 a{
         display: block;
     }
  
+    .album-box a{
+        color: #000;
+    }
+
+    .video-container {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
 
 
 @media (min-width: 600px) {
