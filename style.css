@@ -1,7 +1,7 @@
 header{
     font-family: 'Yeseva One', serif;
     color: #ffffff;
-    background-color: #ff6699
+    background-color: #ff6699;
 }
 /*body{
     background-color: lavender ;
@@ -72,7 +72,7 @@ header h1 a{
     display: block;
     color: #fff;
     text-align: center;
-    padding: 14px 96.85px;
+    padding: 15px 127px;
     text-decoration: none;
     letter-spacing: 2px;
 }
@@ -82,9 +82,31 @@ header h1 a{
     color: #000;
 }
 
+#scrollContainer {
+    display: flex;
+    align-items: center;
+    height: 600px; /* Adjust the height as needed */
+    overflow-x: scroll; /* Allow horizontal scrolling */
+    white-space: nowrap; /* Prevent content from wrapping to the next line */
+}
+
+#scrollContainer img {
+    max-width: 100%;
+    height: auto;
+    margin-right: 20px; /* Adjust the margin between image and trigger area */
+}
+
+#scrollTriggerArea {
+    height: 100%; /* Adjust the height to match the container */
+    width: 50px; /* Adjust the width as needed */
+    background-color: #f0f0f0; /* Some background color for visibility */
+    cursor: pointer;
+}
+
+/* page 1 & 2*/
 .box {
     width: 100%;
-    height: 625px;
+    height: 600px;
     background-color: #e0e0e0;
     border: solid #ccc;
     margin: 20px auto;
@@ -106,6 +128,33 @@ header h1 a{
     margin: 0; /* Remove any default margin */
 }
 
+.box h5{
+    font-family: 'Vollkorn', serif;  
+    color: white;
+}
+
+.bottom-section {
+    text-align: center; /* Align the content in the center */
+    margin-top: 15px; /* Adjust the top margin as needed */
+    background-color: #000;
+    height: 61px;
+}
+
+.bottom-section h5{
+    color:white;
+    font-family: 'EB Garamond', serif;
+    font-size: 15px;
+    margin-top: 0;
+    margin-bottom: 0.05px;
+}
+
+.bottom-section img {
+    width: 28px; /* Set the width of the images as needed */
+    height: 26px; /* Set the height of the images as needed */
+    margin: 15px 5px 0 5px; /* Add margin between images as needed */
+    /* Add any additional styling as needed */
+}
+/* page 2 */
 .boxes-container {
     display: flex;
     justify-content: space-between;
@@ -205,28 +254,68 @@ header h1 a{
        background-color: gainsboro;
     }
     
-    .album-box img {
-        width: 100%;
-        height: auto;
-        padding: 2px;
-        display: block;
-    }
+.album-box img {
+    width: 100%;
+    height: auto;
+    padding: 2px;
+    display: block;
+}
  
-    .album-box a{
-        color: #000;
-    }
+.album-box a{
+    color: #000;
+}
 
-    .video-container {
-        max-width: 1000px;
-        margin: 0 auto;
-    }
+.album-box h3{
+    color: #000;
+}
 
+.video-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* page 4 */
+
+.tour-container {
+    max-width: 700px;
+    margin: 20px auto;
+    overflow: hidden; /* Clear floats */
+    background-color: lavender;
+}
+
+.tour-column {
+    width: 50%;
+    float: left;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.tour-column h2 {
+    font-size: 20px;
+    font-family: 'Vollkorn', serif;
+    color: #ff6699;
+}
+
+.tour-container h2 p {
+    font-size: 16px;
+    font-family:'Vollkorn', serif;
+    color:#ff6699;
+}
+
+.tour-container p {
+    font-size: 16px;
+    font-family:'Bree Serif', serif;
+    color:#000;
+}
 
 @media (min-width: 600px) {
     .box {
         width: 600px;
         height: 400px; /* Adjust the height for desktop view */
         /* Add any other styles specific to desktop view */
+    }
+    .column {
+        width: 100%;
     }
 }
 

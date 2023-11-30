@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home page</title>
+
+    <!--normalize css -->
+    <link rel="stylesheet"
+    href="normalize.css" type="text/css">
     <!--own external css-->
     <link rel="stylesheet"
      href="style.css" type="text/css">
-     <!--normalize css -->
-     <link rel="stylesheet"
-     href="normalize.css" type="text/css">
+    <!--javascript-->
+    <script src="script.js"></script>
      <!--for heading-->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,27 +39,45 @@
 
     <!-- Navigation -->
     <nav class="bar black">
-        <a href="index.html" class="button bar-item">Home</a>
-        <a href="profilepg2.html" class="button bar-item">Profile</a>
+        <a href="index.html">Home</a>
+        <a href="profilepg2.html" class="dropbtn" id="profileBtn">Profile</a>
         <a href="discographypg3.html" class="button bar-item">Discography</a>
-        <a href="videopg4.html" class="button bar-item">Video</a>
-        <a href="tourpg5.html" class="button bar-item">Tour</a>
+        <a href="tourpg4.html" class="button bar-item">Tour</a>
     </nav>
 
     <div class="box">
+        <div id="scrollContainer">
+            <img src="ive.jpeg" alt="image is not available">
+            <img src="ivegrpphoto1.webp" alt="Another Image 1">
+            <img src="ivegrpphoto2.jpeg" alt="Another Image 2">
+            <img src="groupphoto3.jpg" alt="Another Image 2">
 
-        <img src= "ive.jpeg" alt="image is not available" width="1000" height="600">
-        
-        <h2>About IVE</h2>
-        <p>IVE is a six-member South Korean (Kpop) girl group under Starship Entertainment. They debuted on Dec 1, 2021 with the single album Eleven. The members of IVE are Yujin, Wonyoung, Gaeul, Liz, Rei, and Leeseo.</p>
-
-            <p>The group's name, IVE, comes from the English word I HAVE.</p>
-
-            <h5><br>STARSHIP Entertainment</h4>
+            <div id="scrollTriggerArea"></div>
+        </div>
+            <h2>About IVE</h2>
+            <p>IVE is a six-member South Korean (Kpop) girl group under Starship Entertainment. They debuted on Dec 1, 2021, with the single album Eleven. The members of IVE are Yujin, Wonyoung, Gaeul, Liz, Rei, and Leeseo.</p>
+        <div class="bottom-section">            
+            <h5>STARSHIP Entertainment</h5>
+            <a href="https://www.youtube.com/channel/UC-Fnix71vRP64WXeo0ikd0Q">
+                <img src="youtube.png" alt="image 1">
+            </a>
+            <a href="https://www.instagram.com/IVEstarship/">
+                <img src="ig.jpeg" alt="Image 2">
+            </a>
+            <a href="https://www.facebook.com/IVEstarship">
+                <img src="facebook-logo-1-2.png" alt="Image 3">
+            </a>
+            <a href="https://www.tiktok.com/@IVE.official">
+                <img src="tiktok.png" alt="Image 4">
+            </a>
+            <a href="https://weibo.com/ivestarship">
+                <img src="weibo.png" alt="Image 5">
+            </a>
+            <a href="https://twitter.com/IVEstarship">
+                <img src="twitter.png" alt="Image 6">
+            </a>
+        </div>
     </div>
-
-   
-
+           
 </body>
-
 </html>
