@@ -19,4 +19,7 @@ My project is about promoting a Kpop band website called IVE. I am doing a websi
 <br>feature - a table of contents of the date and country where the band members have performances.
 <br>tour details from - https://www.instagram.com/p/CzXh-MWvph-/?igshid=NTYzOWQzNmJjMA==
 </p>
+
+<p>link for my wireframe in Xd: https://xd.adobe.com/view/28ee68ac-491e-4564-9b3e-b0a8d13f0e55-7dbd/
+<p>link for my video: https://share.vidyard.com/watch/t64dVLAUkrKHyjFoWttm8m?</p>
   
