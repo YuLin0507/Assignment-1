@@ -10,7 +10,9 @@
      <!--own external css-->
     <link rel="stylesheet"
     href="style.css" type="text/css">
-     <!--for heading-->
+    <!--javascript-->
+    <script src="script1.js"></script>     
+<!--for heading-->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
@@ -25,7 +27,7 @@
 <!--h2-->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Vollkorn:wght@070&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Vollkorn:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -37,10 +39,22 @@
     <!-- Navigation -->
     <nav class="bar black">
         <a href="index.html" class="button bar-item">Home</a>
-        <a href="profilepg2.html" class="button bar-item">Profile</a>
+        <a href="profilepg2.html" class="dropbtn" id="profileBtn">Profile</a>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="myFunction()">&lt;
+              <i class="down"></i>
+            </button>
+            <div class="dropdown-content" id="myDropdown">
+                <a href="profileyujin.html">YuJin</a>
+                <a href="profilegaeul.html">Gaeul</a>
+                <a href="profilerei.html">Rei</a>
+                <a href="profilewonyoung.html">Wonyoung</a>
+                <a href="profileliz.html">Liz</a>
+                <a href="profileleeseo.html">Leeseo</a>
+            </div>
+        </div>
         <a href="discographypg3.html" class="button bar-item">Discography</a>
         <a href="tourpg4.html" class="button bar-item">Tour</a>
-
     </nav>
 
     <div class="box">
@@ -51,38 +65,38 @@
         
         <div class="boxes-container">
             <div class="members-box">
-                <h4><a href="profileYuJin.html">YUJIN</a></h4>
+                <h4><a href="profileyujin.html">YUJIN</a></h4>
                 <img src="Yujin.jpg" alt="Yujin" width="600" height="400">
                 <p><b>2003.09.01</b></p>
             </div>
     
             <div class="members-box">
-                <h4><a href="profileGaeul.html">GAEUL</a></h4>
+                <h4><a href="profilegaeul.html">GAEUL</a></h4>
                 <img src="Gaeul.jpg" alt="Gaeul" width="600" height="400">
                 <p><b>2002.09.24</b></p>
 
             </div>
     
             <div class="members-box">
-                <h4><a href="profileRei.html">REI</a></h4>
+                <h4><a href="profilerei.html">REI</a></h4>
                 <img src="rei.jpg" alt="Rei" width="600" height="400">
                 <p><b>2004.02.03</b></p>
             </div>
 
             <div class="members-box">
-                <h4><a href="profileWonyoung.html">WONYOUNG</a></h4>
+                <h4><a href="profilewonyoung.html">WONYOUNG</a></h4>
                 <img src="wonyoung.jpg" alt="Wonyoung" width="600" height="400">
                 <p><b>2004.08.31</b></p>
             </div>
     
             <div class="members-box">
-                <h4><a href="profileLiz.html">LIZ</a></h4>
+                <h4><a href="profileliz.html">LIZ</a></h4>
                 <img src="liz.jpg" alt="Liz" width="600" height="400">
                 <p><b>2004.11.21</b></p>
             </div>
     
             <div class="members-box">
-                <h4><a href="profileLeeseo.html">LEESEO</a></h4>
+                <h4><a href="profileleeseo.html">LEESEO</a></h4>
                 <img src="leeseo.jpg" alt="Leeseo" width="600" height="400">
                 <p><b>2007.02.21</b></p>
             </div>    

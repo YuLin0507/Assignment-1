@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home page</title>
-
     <!--normalize css -->
     <link rel="stylesheet"
     href="normalize.css" type="text/css">
@@ -13,6 +12,8 @@
      href="style.css" type="text/css">
     <!--javascript-->
     <script src="script.js"></script>
+    <!--javascript-->
+    <script src="script1.js"></script>
      <!--for heading-->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,27 +40,48 @@
 
     <!-- Navigation -->
     <nav class="bar black">
-        <a href="index.html">Home</a>
+        <a href="index.html" class="button bar-item">Home</a>
         <a href="profilepg2.html" class="dropbtn" id="profileBtn">Profile</a>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="myFunction()">&lt;
+              <i class="down"></i>
+            </button>
+            <div class="dropdown-content" id="myDropdown">
+                <a href="profileyujin.html">YuJin</a>
+                <a href="profilegaeul.html">Gaeul</a>
+                <a href="profilerei.html">Rei</a>
+                <a href="profilewonyoung.html">Wonyoung</a>
+                <a href="profileliz.html">Liz</a>
+                <a href="profileleeseo.html">Leeseo</a>
+            </div>
+        </div>
         <a href="discographypg3.html" class="button bar-item">Discography</a>
         <a href="tourpg4.html" class="button bar-item">Tour</a>
     </nav>
 
-    <div class="box">
-        <div id="scrollContainer">
-            <img src="ive.jpeg" alt="image is not available">
-            <img src="ivegrpphoto1.webp" alt="Another Image 1">
-            <img src="ivegrpphoto2.jpeg" alt="Another Image 2">
-            <img src="groupphoto3.jpg" alt="Another Image 2">
-
-            <div id="scrollTriggerArea"></div>
-        </div>
-            <h2>About IVE</h2>
-            <p>IVE is a six-member South Korean (Kpop) girl group under Starship Entertainment. They debuted on Dec 1, 2021, with the single album Eleven. The members of IVE are Yujin, Wonyoung, Gaeul, Liz, Rei, and Leeseo.</p>
+    <div class = "wholebox">
+        <!--photoscrollcontainer-->
+        <div class="box">
+            <div id="scrollContainer">
+                <img src="ive.jpeg" alt="image is not available">
+                <img src="ivegrpphoto1.webp" alt="Another Image 1">
+                <img src="ivegrpphoto2.jpeg" alt="Another Image 2">
+                <img src="groupphoto3.jpg" alt="Another Image 2">
+                <img src="newive.jpg" alt="Another Image 2">
+ 
+                <div id="scrollTriggerArea"></div>
+            </div>
+        
+                <h2>About IVE</h2>
+                <p>IVE is a six-member South Korean (Kpop) girl group under Starship Entertainment. They debuted on Dec 1, 2021, with the single album Eleven. The members of IVE are Yujin, Wonyoung, Gaeul, Liz, Rei, and Leeseo.</p>
+            <br>
+            </div>                
+            <!--bottom part of the website-->
+    
         <div class="bottom-section">            
-            <h5>STARSHIP Entertainment</h5>
+            <h5>STARSHIP <br>ENTERTAINMENT</h5>
             <a href="https://www.youtube.com/channel/UC-Fnix71vRP64WXeo0ikd0Q">
-                <img src="youtube.png" alt="image 1">
+            <img src="youtube.png" alt="image 1">
             </a>
             <a href="https://www.instagram.com/IVEstarship/">
                 <img src="ig.jpeg" alt="Image 2">
@@ -76,8 +98,8 @@
             <a href="https://twitter.com/IVEstarship">
                 <img src="twitter.png" alt="Image 6">
             </a>
+            
         </div>
     </div>
-           
 </body>
 </html>

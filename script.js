@@ -1,17 +1,18 @@
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+  
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(e) {
+    if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+    }
+  }
 
-
-    document.addEventListener('DOMContentLoaded', function () {
-        var scrollContainer = document.getElementById('scrollContainer');
-        var scrollTriggerArea = document.getElementById('scrollTriggerArea');
-
-        // Add click event listener to the trigger area
-        scrollTriggerArea.addEventListener('click', function () {
-            // Adjust the scroll behavior and distance as needed
-            scrollContainer.scrollBy({
-                left: 200, // Adjust the scroll distance as needed
-                behavior: 'smooth'
-            });
-        });
-    });
 
 

@@ -10,6 +10,8 @@
     <!--own external css-->
    <link rel="stylesheet"
    href="style.css" type="text/css">
+   <!--javascript-->
+   <script src="script1.js"></script> 
      <!--for heading-->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,7 +39,21 @@
     <!-- Navigation -->
     <nav class="bar black">
         <a href="index.html" class="button bar-item">Home</a>
-        <a href="profilepg2.html" class="button bar-item">Profile</a>
+        <a href="profilepg2.html" class="dropbtn" id="profileBtn">Profile</a>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="myFunction()">&lt;
+              <i class="down"></i>
+            </button>
+            <div class="dropdown-content" id="myDropdown">
+                <a href="profileyujin.html">YuJin</a>
+                <a href="profilegaeul.html">Gaeul</a>
+                <a href="profilerei.html">Rei</a>
+                <a href="profilewonyoung.html">Wonyoung</a>
+                <a href="profileliz.html">Liz</a>
+                <a href="profileleeseo.html">Leeseo</a>
+            </div>
+        </div>
+        </a>
         <a href="discographypg3.html" class="button bar-item">Discography</a>
         <a href="tourpg4.html" class="button bar-item">Tour</a>
     </nav>
@@ -51,3 +67,5 @@
             <b>2. Queen of Hearts</b>
         
     </div>
+</body>
+</html>
