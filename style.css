@@ -366,33 +366,77 @@ header h1 a{
     color: #ff6699;
 }
 
-.tour-container h2 p {
+.tour-container h4 {
     font-size: 16px;
     font-family:'Vollkorn', serif;
-    color:#ff6699;
+    color:black;
+    background-color: lavender;
 }
 
-.tour-container p {
+.tour-column p{
+    font-family: 'Bree Serif', serif;
+    color: black;
     font-size: 16px;
-    font-family:'Bree Serif', serif;
-    color:#000;
 }
 
-@media (min-width: 600px) {
-    .box {
-        width: 600px;
-        height: 400px; /* Adjust the height for desktop view */
-        /* Add any other styles specific to desktop view */
+/* General styles for smaller screens */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 24px;
     }
-    .column {
+
+    nav.bar a {
+        padding: 15px 60px;
+    }
+
+    .box {
+        height: auto;
+    }
+
+    .box img {
+        margin-bottom: 20px;
+    }
+
+    .box p {
+        font-size: 16px;
+    }
+
+    .bottom-section {
+        flex-direction: row;
+        text-align: center;
+    }
+
+    .bottom-section h5 {
+        margin-bottom: 10px;
+    }
+
+    .bottom-section img {
+        margin: 10px 0;
+    }
+
+    .wholebox {
         width: 100%;
     }
 }
 
-/* Media query for screens with a width of 992 pixels or more (small desktops) */
-@media (min-width: 992px) {
+/* Styles for medium-sized screens like tablets */
+@media (min-width: 601px) and (max-width: 992px) {
+    nav.bar a {
+        padding: 15px 80px;
+    }
+
+    .box {
+        width: 80%;
+    }
+}
+
+/* Styles for larger screens like laptops/desktops */
+@media (min-width: 993px) {
+    nav.bar a {
+        padding: 15px 122px;
+    }
+
     .box {
         width: 992px;
-        /* Add any other styles specific to small desktops */
     }
 }
